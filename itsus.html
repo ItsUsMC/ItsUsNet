@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItsUs Net</title>
+    <style>
+        @font-face {
+            font-family:five ;
+            src: url(minecraft-five-bold.ttf);
+        }
+        @font-face {
+            font-family:mbold ;
+            src: url(MinecraftBold-nMK1.otf);
+        }
+        @font-face {
+            font-family:mreg ;
+            src: url(MinecraftRegular-Bmg3.otf);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffd828, rgb(255, 165, 56));
+            font-family:five;
+            background-size: cover;
+            background-color: rgb(255, 255, 255);
+            color: #fff;
+        }
+
+        header {
+            
+            background-color: rgba(255, 255, 255, 0.952);
+            padding: 40px;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #5e5e5e;
+        }
+        header p {
+            margin: 0;
+            font-size: 24px;
+            color: #bcbcbc;
+            font-family:mreg;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin: 50px 50px;
+        }
+
+        .button {
+            width: 350px;
+            height: 350px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 10%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 32px;
+            color:#404040;
+            font-family:mbold;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .button img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 10% 10% 30% 30%;
+        }
+
+        footer {
+            background: #ffffff44;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .copy-button, .discord-button {
+            width: 500px;
+            height: 50px;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 30px;
+            color: rgb(145, 145, 145);
+            cursor: pointer;
+            margin: 10px auto;
+            transition: all 0.5s ease;
+            opacity: 1;
+            align-content: center;
+            font-size: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family:mreg;
+            background-color: antiquewhite;
+            
+        }
+
+        .copy-button:hover, .discord-button:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .discord-button {
+            background-color: rgba(170, 179, 255, 0.784);
+            color: #5d5d5d;
+        }
+        .copy-button {
+            background-color: rgba(255, 255, 255, 0.784);
+            color: #757575;
+            
+        }
+        h3{
+            margin: 20;
+            font-size: 40px;
+            color: #5e5e5e;
+            text-align: center;
+            background-color: #ffffff9b;
+        }
+        .info-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
+            margin: 20px auto;
+            color: #4a4a4a;
+            font-family:mreg;
+        }
+        label {
+            display: inline-block; /* Allows adding margin and padding */
+            margin-left: 30px; /* Adjust the margin-bottom to create spacing between labels */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ItsUs Network</h1>
+        <p>A new cracked Minecraft Server</p>
+    </header>
+   
+    <div class="info-container">
+        <iframe width="1000" height="563" src="https://www.youtube.com/embed/Bu-zXEVetBE" frameborder="0" allowfullscreen></iframe>
+        <p>We have been working on this little server for quite some time now. We didn't/couldn't invest any money in this server, so it runs on aternos (a free mc server hoster). It cannot run 24/7, so when you want to play, please ping an owner/admin in the discord server. The server might also have some bugs, please do report them in the discord! Do give this server a go, even though its new! <br><br> - ItsUs Team</p>
+    </div>
+    <button class="copy-button" onclick="copyToClipboard('ItsUsNetwork.aternos.me:14454')"><b><b>Copy Server IP and Port for JAVA</button> <button class="discord-button" onclick="location.href='https://discord.gg/bRtaGWHe5T'"><b>Join our Discord Server!</b></button>
+    <h3>Minigames</h3>
+
+    <div class="container">
+        <div class="button" onclick="location.href='bedwars.html'">
+            <img src="bed.png" alt="Bedwars">
+            <p>Bedwars</p>
+        </div>
+        <div class="button" onclick="location.href='elyflight.html'">
+            <img src="ely.png" alt="ElyFlight">
+            <p>ElyFlight</p>
+        </div>
+        <div class="button" onclick="location.href='survival.html'">
+            <img src="surv.png" alt="Survival">
+            <p>Survival</p>
+        </div>
+        <div class="button" onclick="location.href='parkour.html'">
+            <img src="park.png" alt="Parkour">
+            <p>Parkour</p>
+        </div>
+        <div class="button" onclick="location.href='duels.html'">
+            <img src="duel.png" alt="Duels">
+            <p>Duels</p>
+        </div>
+    </div>
+    
+    
+    
+
+
+
+    <script>
+        function copyToClipboard(text) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+            alert("IP Copied to Clipboard: " + text);
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

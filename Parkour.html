@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItsUs Net</title>
+    <style>
+        @font-face {
+            font-family:five ;
+            src: url(minecraft-five-bold.ttf);
+        }
+        @font-face {
+            font-family:mbold ;
+            src: url(MinecraftBold-nMK1.otf);
+        }
+        @font-face {
+            font-family:mreg ;
+            src: url(MinecraftRegular-Bmg3.otf);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f080ff, rgb(129, 20, 172));
+            font-family:five;
+            background-size: cover;
+            background-color: rgb(255, 255, 255);
+            color: #fff;
+        }
+
+        header {
+            
+            background-color: rgba(255, 255, 255, 0.952);
+            padding: 40px;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #5e5e5e;
+        }
+        header p {
+            margin: 0;
+            font-size: 24px;
+            color: #bcbcbc;
+            font-family:mreg;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+            margin: 50px 50px;
+        }
+
+        .button {
+            width: 1500px;
+            height: 1500px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 2%;
+            margin-bottom: 10px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 24px;
+            color:#404040;
+            font-family:mreg;
+        }
+
+        .button:hover {
+            transform: scale(1.005);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0% 0% 30% 30%;
+        }
+
+        footer {
+            background: #ffffff44;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0 0 15px 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .copy-button, .discord-button {
+            width: 500px;
+            height: 50px;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 30px;
+            color: rgb(145, 145, 145);
+            cursor: pointer;
+            margin: 10px auto;
+            transition: all 0.5s ease;
+            opacity: 1;
+            align-content: center;
+            font-size: 24px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family:mreg;
+            background-color: antiquewhite;
+            
+        }
+
+        .copy-button:hover, .discord-button:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+
+        .discord-button {
+            background-color: rgba(170, 179, 255, 0.784);
+            color: #5d5d5d;
+        }
+        .copy-button {
+            background-color: rgba(255, 255, 255, 0.784);
+            color: #757575;
+            
+        }
+        h1{
+            margin-top: 2%;
+            margin-bottom: 0%;
+            font-size: 60px;
+            color: #45003f;
+            text-align: center;
+            font-family:five;
+        }
+        .info-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 1000px;
+            margin: 20px auto;
+            color: #4a4a4a;
+            font-family:mreg;
+        }
+        label {
+            display: inline-block; /* Allows adding margin and padding */
+            margin-left: 30px; /* Adjust the margin-bottom to create spacing between labels */
+        }
+        h2{
+            margin-top: 0%;
+            margin-bottom: 2%;
+            font-size: 32px;
+            color: #4f4f4f;
+            text-align: center;
+            font-family:mreg;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ItsUs Network</h1>
+        <p>A new cracked Minecraft Server</p>
+    </header>
+   
+    
+    <div class="container">
+        <div class="button">
+            <img src="park.png" alt="walk in the park">
+            <h1>Parkour</h1><BR><h2>Test Your Parkour Skills By Venturing Through The Nether!</h2><br><br>
+    
+    
+    
+
+
+
+    <script>
+        function copyToClipboard(text) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+            alert("IP Copied to Clipboard: " + text);
+        }
+    </script>
+</body>
+</html>
